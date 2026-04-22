@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2200" viewBox="0 0 1600 2200" role="img" aria-labelledby="title desc">
+  <title id="title">Job Portal Website Project Proposal Infographic</title>
+  <desc id="desc">A visual summary of the job portal DBMS course project, including architecture, features, design system, and security measures.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4f7fb" />
+      <stop offset="100%" stop-color="#e7eef7" />
+    </linearGradient>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0f4c81" />
+      <stop offset="100%" stop-color="#12739a" />
+    </linearGradient>
+    <linearGradient id="cardBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#edf5fb" />
+    </linearGradient>
+    <linearGradient id="cardGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#eefaf4" />
+    </linearGradient>
+    <linearGradient id="cardAmber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fff7ea" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#7a8ca5" flood-opacity="0.14" />
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f5d7d" />
+    </marker>
+    <style>
+      text { font-family: Montserrat, Inter, Arial, sans-serif; fill: #17324d; }
+      .title { font-size: 44px; font-weight: 700; }
+      .subtitle { font-size: 20px; font-weight: 500; fill: #e6f3fb; }
+      .section-title { font-size: 28px; font-weight: 700; }
+      .section-kicker { font-size: 14px; font-weight: 700; letter-spacing: 2px; fill: #5d7691; }
+      .body { font-size: 18px; fill: #35516d; }
+      .small { font-size: 15px; fill: #4c6885; }
+      .chip { font-size: 17px; font-weight: 700; }
+      .card-title { font-size: 21px; font-weight: 700; }
+      .list { font-size: 16px; fill: #3f5a75; }
+      .metric { font-size: 26px; font-weight: 700; }
+      .label { font-size: 14px; font-weight: 700; fill: #6b859f; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="2200" fill="url(#bg)" />
+  <circle cx="1460" cy="180" r="180" fill="#d7e7f5" opacity="0.75" />
+  <circle cx="120" cy="2080" r="190" fill="#dceee7" opacity="0.75" />
+  <circle cx="1450" cy="1940" r="120" fill="#fff1d4" opacity="0.85" />
+
+  <rect x="70" y="50" width="1460" height="280" rx="34" fill="url(#hero)" filter="url(#shadow)" />
+  <text x="120" y="125" class="section-kicker" fill="#b8d7e8">DBMS COURSE PROJECT PROPOSAL</text>
+  <text x="120" y="185" class="title" fill="#ffffff">Job Portal Website</text>
+  <text x="120" y="228" class="subtitle">A simple online platform connecting job seekers and employers through structured database-driven workflows.</text>
+  <text x="120" y="258" class="subtitle">Frontend: React + Vite + Tailwind CSS  |  Backend: Node.js 20 + Express.js  |  Database: MySQL</text>
+
+  <rect x="120" y="285" width="240" height="52" rx="26" fill="#ffffff" opacity="0.16" />
+  <text x="160" y="318" class="chip" fill="#ffffff">React + Vite + Tailwind</text>
+  <rect x="386" y="285" width="220" height="52" rx="26" fill="#ffffff" opacity="0.16" />
+  <text x="436" y="318" class="chip" fill="#ffffff">Node + Express API</text>
+  <rect x="632" y="285" width="150" height="52" rx="26" fill="#ffffff" opacity="0.16" />
+  <text x="682" y="318" class="chip" fill="#ffffff">MySQL</text>
+  <rect x="808" y="285" width="214" height="52" rx="26" fill="#ffffff" opacity="0.16" />
+  <text x="846" y="318" class="chip" fill="#ffffff">CRUD + Relationships</text>
+
+  <rect x="70" y="380" width="1460" height="170" rx="28" fill="#ffffff" filter="url(#shadow)" />
+  <text x="110" y="430" class="section-kicker">EXECUTIVE SUMMARY</text>
+  <text x="110" y="472" class="section-title">Project Objective</text>
+  <text x="110" y="510" class="body">Develop a practical job portal that demonstrates user management, job posting, job applications, notifications, and</text>
+  <text x="110" y="538" class="body">admin moderation using a relational MySQL database with real-world entities, table relationships, and CRUD operations.</text>
+
+  <rect x="70" y="590" width="1460" height="560" rx="28" fill="#ffffff" filter="url(#shadow)" />
+  <text x="110" y="640" class="section-kicker">TECHNICAL ARCHITECTURE</text>
+  <text x="110" y="682" class="section-title">System Flow And Core Modules</text>
+
+  <rect x="130" y="760" width="220" height="120" rx="24" fill="url(#cardBlue)" stroke="#cfe0ee" />
+  <text x="172" y="808" class="card-title">Job Seeker</text>
+  <text x="156" y="840" class="small">search jobs</text>
+  <text x="156" y="865" class="small">apply online</text>
+
+  <rect x="130" y="920" width="220" height="120" rx="24" fill="url(#cardGreen)" stroke="#d2e7dd" />
+  <text x="176" y="968" class="card-title">Employer</text>
+  <text x="156" y="1000" class="small">post openings</text>
+  <text x="156" y="1025" class="small">review applicants</text>
+
+  <rect x="470" y="720" width="300" height="360" rx="28" fill="#f9fcff" stroke="#d4e2ee" />
+  <text x="545" y="770" class="card-title">React Frontend</text>
+  <rect x="525" y="805" width="190" height="210" rx="22" fill="#ffffff" stroke="#dbe8f2" />
+  <rect x="545" y="830" width="150" height="16" rx="8" fill="#d9ebf6" />
+  <rect x="545" y="860" width="120" height="12" rx="6" fill="#edf5fb" />
+  <rect x="545" y="892" width="150" height="42" rx="14" fill="#e8f4fb" />
+  <rect x="545" y="946" width="70" height="42" rx="14" fill="#d8efe3" />
+  <rect x="625" y="946" width="70" height="42" rx="14" fill="#fff0cf" />
+  <text x="534" y="1045" class="small">dashboard, search, profile, admin UI</text>
+
+  <rect x="850" y="720" width="300" height="360" rx="28" fill="#f9fcff" stroke="#d4e2ee" />
+  <text x="924" y="770" class="card-title">Express API Gateway</text>
+  <rect x="885" y="812" width="230" height="44" rx="14" fill="#e7f1f9" />
+  <text x="942" y="840" class="small">User Service</text>
+  <rect x="885" y="870" width="230" height="44" rx="14" fill="#e9f7ef" />
+  <text x="948" y="898" class="small">Job Service</text>
+  <rect x="885" y="928" width="230" height="44" rx="14" fill="#fff5e5" />
+  <text x="924" y="956" class="small">Application Service</text>
+  <rect x="885" y="986" width="230" height="44" rx="14" fill="#eef0fb" />
+  <text x="916" y="1014" class="small">Notification Service</text>
+  <rect x="885" y="1044" width="230" height="44" rx="14" fill="#f4edf7" />
+  <text x="944" y="1072" class="small">Admin Service</text>
+
+  <rect x="1230" y="790" width="220" height="220" rx="28" fill="#f7fbfe" stroke="#d4e2ee" />
+  <ellipse cx="1340" cy="832" rx="76" ry="26" fill="#d6ebf8" stroke="#bdd9ea" />
+  <rect x="1264" y="832" width="152" height="98" fill="#d6ebf8" stroke="#bdd9ea" />
+  <ellipse cx="1340" cy="930" rx="76" ry="26" fill="#c9e3f4" stroke="#bdd9ea" />
+  <text x="1298" y="972" class="card-title">MySQL</text>
+  <text x="1281" y="1004" class="small">users</text>
+  <text x="1331" y="1004" class="small">jobs</text>
+  <text x="1368" y="1004" class="small">applications</text>
+  <text x="1281" y="1028" class="small">employers</text>
+
+  <line x1="350" y1="820" x2="470" y2="820" stroke="#2f5d7d" stroke-width="5" marker-end="url(#arrow)" />
+  <line x1="350" y1="980" x2="470" y2="980" stroke="#2f5d7d" stroke-width="5" marker-end="url(#arrow)" />
+  <line x1="770" y1="900" x2="850" y2="900" stroke="#2f5d7d" stroke-width="5" marker-end="url(#arrow)" />
+  <line x1="1150" y1="900" x2="1230" y2="900" stroke="#2f5d7d" stroke-width="5" marker-end="url(#arrow)" />
+
+  <text x="110" y="1120" class="small">Data model focus: user profiles, company accounts, job listings, applications, status tracking, notifications, and role-based access.</text>
+
+  <rect x="70" y="1190" width="700" height="640" rx="28" fill="#ffffff" filter="url(#shadow)" />
+  <text x="110" y="1240" class="section-kicker">USER PANEL</text>
+  <text x="110" y="1282" class="section-title">Primary User Features</text>
+
+  <rect x="110" y="1320" width="620" height="62" rx="18" fill="#edf5fb" />
+  <text x="136" y="1360" class="card-title">Dashboard</text>
+  <text x="320" y="1360" class="list">overview, notifications, quick stats, recent jobs</text>
+
+  <rect x="110" y="1396" width="620" height="62" rx="18" fill="#eefaf4" />
+  <text x="136" y="1436" class="card-title">Profile Management</text>
+  <text x="388" y="1436" class="list">personal info, education, skills, experience, resume</text>
+
+  <rect x="110" y="1472" width="620" height="62" rx="18" fill="#fff7ea" />
+  <text x="136" y="1512" class="card-title">Job Search System</text>
+  <text x="346" y="1512" class="list">keyword search, location, category, salary, sorting</text>
+
+  <rect x="110" y="1548" width="620" height="62" rx="18" fill="#edf5fb" />
+  <text x="136" y="1588" class="card-title">Application Management</text>
+  <text x="404" y="1588" class="list">apply online, upload resume, track status, history</text>
+
+  <rect x="110" y="1624" width="620" height="62" rx="18" fill="#eefaf4" />
+  <text x="136" y="1664" class="card-title">Company Interaction</text>
+  <text x="392" y="1664" class="list">view profiles, browse listings, follow companies</text>
+
+  <rect x="110" y="1700" width="620" height="62" rx="18" fill="#fff7ea" />
+  <text x="136" y="1740" class="card-title">Recommendations</text>
+  <text x="339" y="1740" class="list">profile-based suggestions, trending, recent jobs</text>
+
+  <rect x="110" y="1776" width="620" height="62" rx="18" fill="#edf5fb" />
+  <text x="136" y="1816" class="card-title">Search And Discovery</text>
+  <text x="386" y="1816" class="list">advanced filters, bookmarks, saved searches</text>
+
+  <rect x="830" y="1190" width="700" height="640" rx="28" fill="#ffffff" filter="url(#shadow)" />
+  <text x="870" y="1240" class="section-kicker">ADMIN PANEL</text>
+  <text x="870" y="1282" class="section-title">Governance And Moderation Features</text>
+
+  <rect x="870" y="1320" width="620" height="62" rx="18" fill="#edf5fb" />
+  <text x="896" y="1360" class="card-title">Dashboard Overview</text>
+  <text x="1140" y="1360" class="list">users, jobs, applications, recent registrations</text>
+
+  <rect x="870" y="1396" width="620" height="62" rx="18" fill="#eefaf4" />
+  <text x="896" y="1436" class="card-title">User Management</text>
+  <text x="1092" y="1436" class="list">search users, roles, activation, deactivation</text>
+
+  <rect x="870" y="1472" width="620" height="62" rx="18" fill="#fff7ea" />
+  <text x="896" y="1512" class="card-title">Job Post Moderation</text>
+  <text x="1153" y="1512" class="list">review, approve, reject, remove spam</text>
+
+  <rect x="870" y="1548" width="620" height="62" rx="18" fill="#edf5fb" />
+  <text x="896" y="1588" class="card-title">Employer Management</text>
+  <text x="1171" y="1588" class="list">verify companies, monitor job posts, profiles</text>
+
+  <rect x="870" y="1624" width="620" height="62" rx="18" fill="#eefaf4" />
+  <text x="896" y="1664" class="card-title">Application Monitoring</text>
+  <text x="1185" y="1664" class="list">platform activity and application statistics</text>
+
+  <rect x="870" y="1700" width="620" height="62" rx="18" fill="#fff7ea" />
+  <text x="896" y="1740" class="card-title">System Configuration</text>
+  <text x="1156" y="1740" class="list">settings, notifications, backup and restore</text>
+
+  <rect x="870" y="1776" width="620" height="62" rx="18" fill="#edf5fb" />
+  <text x="896" y="1816" class="card-title">Content And Maintenance</text>
+  <text x="1189" y="1816" class="list">blog posts, comments, logs, performance</text>
+
+  <rect x="70" y="1870" width="1460" height="200" rx="28" fill="#ffffff" filter="url(#shadow)" />
+  <text x="110" y="1920" class="section-kicker">KEY INTERFACES</text>
+  <text x="110" y="1962" class="section-title">Important Screens To Demonstrate</text>
+
+  <rect x="110" y="1992" width="250" height="52" rx="18" fill="#edf5fb" />
+  <text x="145" y="2026" class="card-title">User Dashboard</text>
+  <rect x="390" y="1992" width="240" height="52" rx="18" fill="#eefaf4" />
+  <text x="448" y="2026" class="card-title">Job Search</text>
+  <rect x="660" y="1992" width="280" height="52" rx="18" fill="#fff7ea" />
+  <text x="715" y="2026" class="card-title">Job Moderation</text>
+  <rect x="970" y="1992" width="220" height="52" rx="18" fill="#edf5fb" />
+  <text x="1038" y="2026" class="card-title">Analytics</text>
+  <rect x="1220" y="1992" width="250" height="52" rx="18" fill="#eefaf4" />
+  <text x="1264" y="2026" class="card-title">User Management</text>
+
+  <rect x="70" y="2100" width="1460" height="70" rx="24" fill="#17324d" />
+  <text x="110" y="2145" class="small" fill="#e3edf5">Design system: clean typography, professional layouts, light transitions, responsive Tailwind grids.</text>
+  <text x="1040" y="2145" class="small" fill="#e3edf5">Security: JWT auth, RBAC, password hashing, validation, rate limiting, SQL injection protection.</text>
+</svg>

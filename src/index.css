@@ -1,0 +1,257 @@
+/* Load a nice font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
+/* Load Tailwind CSS utility classes */
+@import 'tailwindcss';
+
+/* Global design values (colors, font, and text settings) */
+:root {
+  --surface: #ffffff;
+  --surface-muted: #f8fbff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --brand-1: #0f766e;
+  --brand-2: #16a34a;
+  --brand-3: #0284c7;
+  --ring: rgba(2, 132, 199, 0.28);
+  color-scheme: light;
+  font-family: 'Montserrat', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Include padding and border inside element width/height */
+* {
+  box-sizing: border-box;
+}
+
+/* Make page scroll smooth when jumping to sections */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Main page look for light mode */
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(20, 184, 166, 0.14), transparent 34%),
+    radial-gradient(circle at 86% 4%, rgba(14, 165, 233, 0.15), transparent 30%),
+    linear-gradient(180deg, #eef9ff 0%, #f5fcf9 38%, #ffffff 100%);
+  color: var(--text-primary);
+}
+
+/* Make buttons and inputs use the same font as the page */
+button,
+input {
+  font: inherit;
+}
+
+/* Links use normal text color and no underline */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Tell browser dark mode colors are available */
+html.dark {
+  color-scheme: dark;
+}
+
+/* Main page look for dark mode */
+html.dark body {
+  background:
+    radial-gradient(circle at 16% 8%, rgba(16, 185, 129, 0.12), transparent 33%),
+    radial-gradient(circle at 80% 2%, rgba(56, 189, 248, 0.1), transparent 30%),
+    linear-gradient(180deg, #020617 0%, #0b1120 42%, #020617 100%);
+  color: #e2e8f0;
+}
+
+/* Color shown when user selects text */
+::selection {
+  background: rgba(16, 185, 129, 0.22);
+}
+
+/* Thin custom scrollbar for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(15, 118, 110, 0.45) transparent;
+}
+
+/* Scrollbar size for Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Scrollbar handle style */
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(15, 118, 110, 0.72), rgba(2, 132, 199, 0.65));
+  border-radius: 999px;
+}
+
+/* Scrollbar track (background behind handle) */
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Glow ring for keyboard focus (accessibility) */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+}
+
+/* Animation: softly show elements from below */
+@keyframes uiReveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Apply reveal animation */
+.ui-reveal {
+  animation: uiReveal 0.55s cubic-bezier(0.21, 0.61, 0.35, 1) both;
+}
+
+/* Small animation delay helpers */
+.ui-delay-1 {
+  animation-delay: 0.08s;
+}
+
+.ui-delay-2 {
+  animation-delay: 0.16s;
+}
+
+.ui-delay-3 {
+  animation-delay: 0.24s;
+}
+
+/* Soft card style for panels */
+.ui-card-soft {
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  background: color-mix(in oklab, white 88%, #e7f7ff 12%);
+  box-shadow: 0 16px 44px rgba(15, 23, 42, 0.08);
+}
+
+/* Small uppercase heading text */
+.ui-eyebrow {
+  font-size: 0.74rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  color: #0369a1;
+}
+
+/* Main title style */
+.ui-title {
+  margin: 0;
+  font-size: clamp(1.75rem, 2.6vw, 2.55rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+/* Normal paragraph/copy text style */
+.ui-copy {
+  margin: 0;
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* Rounded panel with border and shadow */
+.ui-card-panel {
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+
+/* Small info box style */
+.ui-metric-pill {
+  border-radius: 1.6rem;
+  background: linear-gradient(135deg, #effcf6, #eef8ff);
+  padding: 1rem 1.25rem;
+  font-size: 0.875rem;
+  color: #475569;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+}
+
+/* Dark mode version of soft card */
+html.dark .ui-card-soft {
+  border-color: rgba(71, 85, 105, 0.68);
+  background: rgba(15, 23, 42, 0.86);
+  box-shadow: 0 24px 56px rgba(2, 6, 23, 0.58);
+}
+
+/* Dark mode text color updates */
+html.dark .ui-eyebrow {
+  color: #38bdf8;
+}
+
+html.dark .ui-title {
+  color: #e2e8f0;
+}
+
+html.dark .ui-copy {
+  color: #cbd5e1;
+}
+
+/* Dark mode version of card panel */
+html.dark .ui-card-panel {
+  border-color: rgba(71, 85, 105, 0.68);
+  background: rgba(15, 23, 42, 0.9);
+  box-shadow: 0 24px 56px rgba(2, 6, 23, 0.58);
+}
+
+/* Dark mode version of metric pill */
+html.dark .ui-metric-pill {
+  background: linear-gradient(135deg, rgba(6, 78, 59, 0.9), rgba(12, 74, 110, 0.86));
+  color: #cbd5e1;
+}
+
+/* Force common light backgrounds to become dark in dark mode */
+html.dark .bg-white,
+html.dark .bg-white\/60,
+html.dark .bg-white\/70,
+html.dark .bg-white\/80,
+html.dark .bg-white\/90 {
+  background-color: rgba(15, 23, 42, 0.9) !important;
+}
+
+html.dark .bg-slate-50 {
+  background-color: rgba(30, 41, 59, 0.92) !important;
+}
+
+/* Bright text for dark backgrounds */
+html.dark .text-slate-900 {
+  color: #e2e8f0 !important;
+}
+
+html.dark .text-slate-800,
+html.dark .text-slate-700,
+html.dark .text-slate-600,
+html.dark .text-slate-500,
+html.dark .text-slate-400 {
+  color: #cbd5e1 !important;
+}
+
+/* Darker borders in dark mode */
+html.dark .border-slate-100,
+html.dark .border-slate-200,
+html.dark .border-slate-300 {
+  border-color: rgba(71, 85, 105, 0.8) !important;
+}
