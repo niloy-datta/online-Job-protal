@@ -46,5 +46,5 @@
 - Wrote and designed the ER diagram
 - Prepared project documentation and contributed to system design work
 
-Vedio Link https://drive.google.com/drive/my-drive?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto
+Vedio Link https://drive.google.com/file/d/1XBNqeaq30WdDpl7ZLcWXkBJyXYQ5r4Yq/view?usp=sharing
 
