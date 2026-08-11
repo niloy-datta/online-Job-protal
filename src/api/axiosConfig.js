@@ -41,7 +41,7 @@ api.interceptors.response.use(
       clearAuthToken()
       window.sessionStorage.removeItem(AUTH_STORAGE_KEY)
       window.sessionStorage.setItem(SESSION_EXPIRED_FLAG_KEY, 'true')
-      window.location.href = '/login'
+      window.location.assign(`${import.meta.env.BASE_URL}login`)
     }
 
     return Promise.reject(error)
